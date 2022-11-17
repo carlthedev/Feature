@@ -1,0 +1,67 @@
+body {
+  padding: 1em;
+}
+
+img {
+  height: 50px;
+  width: auto;
+}
+
+.startFinish {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border-top: 5px dashed black  ;
+}
+
+.car1-toggle {
+  position: relative;
+  animation-name: moveRight;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes moveRight {
+  0% {
+    left: 1vw;
+  }
+  100% {
+    left: 89vw;
+  }
+}
+
+.car2-toggle {
+  position: relative;
+  animation-name: moveRight-2;
+  animation-duration: 8s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes moveRight-2 {
+  0% {
+    left: 1vw;
+  }
+  100% {
+    left: 89vw;
+  }
+}
+
+.car3-toggle {
+  position: relative;
+  animation-name: moveRight-3;
+  animation-duration: 6s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes moveRight-3 {
+  0% {
+    left: 1vw;
+  }
+  100% {
+    left: 89vw;
+  }
+}
+
+
