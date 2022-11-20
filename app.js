@@ -3,6 +3,7 @@
 // max points are soft, mercedes and airflow 
 
 let startButton = document.querySelector('.startRace');
+let results = document.querySelector('.popup');
 let car1SpeedStart = 20;
 let car1SpeedFinish = `${car1SpeedStart}s`;
 let tyreSelection = document.querySelector("#tyres");
@@ -25,4 +26,28 @@ startButton.addEventListener('click', () => {
   document.querySelector('.car2').className = "car2-toggle";
   document.querySelector('.car3').className = "car3-toggle";
 
+  popupSpeed = car1SpeedStart * 1000 + 1000;
+
+  reloadSpeed = 8000 + 5000;
+
+  if (popupSpeed < 6000) {
+    results.innerHTML = "Winner!";
+  } else {
+    results.innerHTML = "You lost!";
+  };
+
+  if (car1SpeedStart > 8) {
+    reloadSpeed = car1SpeedStart * 1000 + 5000;
+  }
+
+  setTimeout(function(){
+    results.style.visibility = "visible";
+ }, `${popupSpeed}`);
+
+  setTimeout(function(){
+    window.location.reload();
+ }, `${reloadSpeed}`);
+
+ startButton.style.display = "none";
+ 
 });

@@ -64,4 +64,6 @@ hr {
   }
 }
 
-
+.popup {
+  visibility: hidden;
+}
