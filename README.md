@@ -1,11 +1,11 @@
 # Car race feature project
 
-planning 
+## Planning 
 
 
 
-building 
+## Building 
 
 
 
-debugging
+## Debugging
