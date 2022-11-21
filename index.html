@@ -11,58 +11,70 @@
 
 <body>
 
-  <select id="tyres">
-    <option value="" disabled selected> Select tyre compound</option>
-    <option value="Hard">Hard</option>
-    <option value="Medium">Medium</option>
-    <option value="Soft">Soft</option>
-  </select>
+  <div class="main">
+    <h1><img src="flag.svg" alt="">Car race strategy game </h1>
+    <p>Amend your car settings to try and win the race with the least amount of attempts. Good luck! your car is orange   <img id="introCar" src="car1.svg" alt=""></p>
 
-  <select id="engine">
-    <option value="" disabled selected> Select engine manufacturer</option>
-    <option value="Mercedes">Mercedes</option>
-    <option value="Ferrari">Ferrari</option>
-    <option value="Honda">Honda</option>
-  </select>
+    <div id="raceDash">
 
-  <select id="aero">
-    <option value="" disabled selected> Select aero bias</option>
-    <option value="Downforce">Downforce</option>
-    <option value="Airflow">Airflow</option>
-    <option value="Drag">Drag</option>
-  </select>
+      <div id="raceSelections">
+        <select id="tyres">
+          <option value="" disabled selected> Select tyre compound</option>
+          <option value="Hard">Hard</option>
+          <option value="Medium">Medium</option>
+          <option value="Soft">Soft</option>
+        </select>
 
-  <button class="startRace"> Start Race!</button>
+        <select id="engine">
+          <option value="" disabled selected> Select engine manufacturer</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Ferrari">Ferrari</option>
+          <option value="Honda">Honda</option>
+        </select>
 
-  <div class="counter">
-    <p>0</p>
-    
+        <select id="aero">
+          <option value="" disabled selected> Select aero bias</option>
+          <option value="Downforce">Downforce</option>
+          <option value="Airflow">Airflow</option>
+          <option value="Drag">Drag</option>
+        </select>
+      </div>
+
+      <div id="rightItems">
+        <button class="startRace"> Start Race!</button>
+        <button class="reset"> Reset!</button>
+        <div class="counter">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="startFinish">
+      <p>Start</p>
+      <p>Finish</p>
+    </div>
+
+    <hr>
+
+    <Div class="car1">
+      <img src="car1.svg" alt="">
+    </Div>
+
+    <hr>
+
+    <Div class="car2">
+      <img src="car2.svg" alt="">
+    </Div>
+
+    <hr>
+
+    <Div class="car3">
+      <img src="car3.svg" alt="">
+    </Div>
+
+    <hr>
+
   </div>
-
-  <div class="startFinish">
-    <p>Start</p>
-    <p>Finish</p>
-  </div>
-
-  <hr>
-
-  <Div class="car1">
-    <img src="car1.svg" alt="">
-  </Div>
-
-  <hr>
-
-  <Div class="car2">
-    <img src="car2.svg" alt="">
-  </Div>
-
-  <hr>
-
-  <Div class="car3">
-    <img src="car3.svg" alt="">
-  </Div>
-
-  <hr>
 
   <Div class="popup">
   </Div>

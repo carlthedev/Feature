@@ -1,5 +1,7 @@
 body {
-  padding: 1em;
+  position: static;
+  background-color: rgb(222, 219, 219);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
@@ -67,3 +69,78 @@ hr {
 .popup {
   visibility: hidden;
 }
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#raceSelections {
+  display: flex;
+  flex-direction: column;
+}
+
+#raceSelections select {
+  padding: 10px;
+  margin: 10px;
+  width: 20em;
+}
+
+#raceButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.startRace, .reset, .counter{
+  padding: 10px;
+  margin: 10px;
+  width: 22.5em;
+}
+
+#raceDash {
+  display: flex;
+  flex-direction: row;
+}
+
+#rightItems {
+  width: 20em;
+}
+
+.counter {
+  border: 1px solid black;
+  background-color: rgb(4, 200, 249);
+  width: auto;
+  border-radius: 3px;
+}
+
+.startRace {
+  background-color: green;
+  border-radius: 3px;
+}
+
+.startRace img {
+  width: 10px;
+}
+
+.reset {
+  background-color: red;
+  border-radius: 3px;
+}
+
+#introCar {
+  vertical-align: middle;
+}
+
+
+
