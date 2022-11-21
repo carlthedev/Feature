@@ -2,7 +2,7 @@
 
 ## Planning 
 
-![](wireframe.png)
+![](featureWireFrame.png)
 
 ## Building 
 
