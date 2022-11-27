@@ -94,5 +94,9 @@ if (sessionStorage.clickCount) {
   document.querySelector(".counter").innerHTML = "Number of races attempted = " + sessionStorage.clickCount;
 }
 
+// do not display blue counter if the inner html is empty
+let count = document.querySelector(".counter");
 
-console.log(typeof(Storage));
+if (count.innerHTML === "" ) {
+  count.style.display = "none";
+}
